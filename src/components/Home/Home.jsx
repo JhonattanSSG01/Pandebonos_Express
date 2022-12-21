@@ -23,8 +23,8 @@ const HOME = _ => {
         </p>
         <h1 className="title">Nuestros Productos</h1>
         <div className="products">
-          <img className='products1' src={Products1} alt="Imagen alusiva a los productos elaborados" />
-          <img className='products2' src={Products2} alt="Imagen alusiva a los productos elaborados" />
+          <img className='products1 productsImg' src={Products1} alt="Imagen alusiva a los productos elaborados" />
+          <img className='products2 productsImg' src={Products2} alt="Imagen alusiva a los productos elaborados" />
         </div>
         <a className='buttonProducts'>Productos</a>
       </main>

@@ -1,25 +1,25 @@
-.legendWelcome img{
+.legendWelcome img {
   width: 90%;
   margin: 2rem 0 1rem 0;
-  box-shadow: 0 0 30px rgba(0, 0, 0, .5) ;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.title{
+.title {
   margin: 0;
   font-size: 22px;
   text-align: center;
   color: var(--colorText);
 }
 
-.legendWelcome > .subtitle{
-  margin: .5rem;
+.legendWelcome > .subtitle {
+  margin: 0.5rem;
   font-size: 18px;
   font-weight: 100;
   text-align: center;
   color: var(--colorNav);
 }
 
-main > .text{
+main > .text {
   margin: 0;
   padding: 1rem;
   font-size: 18px;
@@ -35,21 +35,20 @@ main > .text{
   position: relative;
 }
 
-.products1 {
-  width: 80%;
+.productsImg {
   height: 10rem;
   border-radius: 2rem;
   object-fit: cover;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, .5);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.products1 {
+  width: 80%;
 }
 
 .products2 {
   width: 70%;
   margin: auto;
-  height: 9rem;
-  border-radius: 2rem;
-  object-fit: cover;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -57,11 +56,11 @@ main > .text{
 
 .buttonProducts {
   width: 100%;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: var(--colorGlobal);
   background-color: var(--colorText);
   box-shadow: inset 0 -5px 8px var(--colorNav);
