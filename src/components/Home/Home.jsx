@@ -26,7 +26,7 @@ const HOME = _ => {
           <img className='products1 productsImg' src={Products1} alt="Imagen alusiva a los productos elaborados" />
           <img className='products2 productsImg' src={Products2} alt="Imagen alusiva a los productos elaborados" />
         </div>
-        <a className='buttonProducts'>Productos</a>
+        <button className='buttonProducts'>Productos</button>
       </main>
     </>
   );

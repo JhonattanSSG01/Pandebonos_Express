@@ -1,0 +1,37 @@
+footer > .containerFooter{
+  width: 100%;
+  margin: 4rem 0 .5rem 0;
+  padding: 3rem 0 .1rem 0; 
+  border-radius: 1rem;
+  background-color: var(--colorFooter);
+  position: relative;
+}
+
+.containerFooter img{
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .5);
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  right: 0;
+}
+
+.titleFooter{
+  padding: 1rem .5rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--colorNav);
+}
+
+.socialMedia > .address > h5{
+  font-weight: 400;
+}
+
+.socialMedia > .icons > i{
+  font-size: 35px;
+  margin: 1rem;
+}

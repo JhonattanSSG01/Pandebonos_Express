@@ -1,12 +1,14 @@
 import './App.css';
-import Header_Mobile from './components/HeaderMobile/HeaderMobile';
+import HeaderMobile from './components/HeaderMobile/HeaderMobile';
 import Home from './components/Home/Home';
+import Footer from './components/Footer_Home/FooterHome';
 
 function App() {
   return (
     <div className="App">
-      <Header_Mobile/>
+      <HeaderMobile/>
       <Home/>
+      <Footer/>
     </div>
   );
 }
