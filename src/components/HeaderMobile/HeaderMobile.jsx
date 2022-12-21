@@ -9,7 +9,6 @@ const HEADER_MOBILE = _ => {
       <img className='logo' src={img} alt="logo de la microempesa" />
       <div className="iconNav"></div>
     </div>
-      {/* <h1 style={{fontFamily: 'var(--fontPrincipal)', color: 'var(--colorText)', fontSize: '20px', margin: '0px'}}>Pandebonos Express</h1> */}
   </header>
   </>
 }
