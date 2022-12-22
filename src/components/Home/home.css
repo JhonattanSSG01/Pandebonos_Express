@@ -1,6 +1,11 @@
 /* Misión de la empresa */
-.legendWelcome img {
+.legendWelcome{
   width: 90%;
+  margin: auto;
+}
+
+.legendWelcome img {
+  width: 100%;
   margin: 2rem 0 1rem 0;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
@@ -33,7 +38,7 @@ main > .text {
 .products {
   width: 90%;
   height: 18rem;
-  margin: 2rem 0 4rem;
+  margin: 2rem auto;
   position: relative;
 }
 
@@ -56,3 +61,21 @@ main > .text {
   right: 0;
 }
 
+/* Boton Productos */
+.buttonProducts{
+  width: 70%;
+  margin: auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  color: var(--colorGlobal);
+  background-color: var(--colorText);
+  box-shadow: inset 0 -5px 8px var(--colorNav);
+}

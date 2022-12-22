@@ -1,12 +1,16 @@
-import React from 'react';
-import './home.css';
-import Welcome from './assets/welcome.jpg';
-import Products1 from './assets/categoria1.jpg';
-import Products2 from './assets/categoria2.jpg';
+import React from "react";
+import "./home.css";
+import Welcome from "./assets/welcome.jpg";
+import Products1 from "./assets/categoria1.jpg";
+import Products2 from "./assets/categoria2.jpg";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
-const Home = _ => {
+const Home = (_) => {
   return (
     <>
+      <Header />
       <main>
         <div className="legendWelcome">
           <img src={Welcome} alt="Imagen de Bienvenida" />
@@ -34,9 +38,15 @@ const Home = _ => {
             alt="Imagen alusiva a los productos elaborados"
           />
         </div>
+        <div className="buttonProducts">
+          <Link to="/categories" className="button">
+            Productos
+          </Link>
+        </div>
       </main>
+      <Footer />
     </>
   );
-}
+};
 
 export default Home;
