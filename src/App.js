@@ -1,15 +1,22 @@
+import React from 'react';
 import './App.css';
-import HeaderMobile from './components/HeaderMobile/HeaderMobile';
+import './components/Home/home.css';
+import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import Footer from './components/Footer_Home/FooterHome';
+import Footer from './components/Footer/Footer';
+import { Link } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <HeaderMobile/>
-      <Home/>
+    <>
+      <Header/>
+      <Home />
+      <Link to='/categories' className="buttonProducts">
+        Productos
+      </Link>
       <Footer/>
-    </div>
+    </>
   );
 }
 

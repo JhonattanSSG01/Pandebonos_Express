@@ -1,9 +1,9 @@
 import React from 'react';
-import './headerMobile.css';
+import './header.css';
 import img from './assets/logo.jpeg';
 
 
-const HEADER_MOBILE = _ => {
+const Header = _ => {
   return (
     <>
       <header>
@@ -18,4 +18,4 @@ const HEADER_MOBILE = _ => {
   );
 }
 
-export default HEADER_MOBILE;
+export default Header;

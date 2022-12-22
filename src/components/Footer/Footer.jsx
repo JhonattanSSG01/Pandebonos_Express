@@ -1,8 +1,8 @@
 import React from "react";
-import "./footerHome.css";
+import "./footer.css";
 import Logo from "./assets/logo.jpeg";
 
-const FOOTER_HOME = _ => {
+const Footer = _ => {
   return (
     <>
       <footer>
@@ -24,6 +24,7 @@ const FOOTER_HOME = _ => {
               <i className="ri-facebook-circle-fill"></i>
               <i className="ri-instagram-line"></i>
               <i className="ri-whatsapp-line"></i>
+              <i className="ri-navigation-fill"></i>
             </section>
             <section className="credits">
               <p>Pandebonos Express | 2022</p>
@@ -35,4 +36,4 @@ const FOOTER_HOME = _ => {
   );
 };
 
-export default FOOTER_HOME;
+export default Footer;

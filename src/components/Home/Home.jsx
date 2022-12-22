@@ -4,7 +4,7 @@ import Welcome from './assets/welcome.jpg';
 import Products1 from './assets/categoria1.jpg';
 import Products2 from './assets/categoria2.jpg';
 
-const HOME = _ => {
+const Home = _ => {
   return (
     <>
       <main>
@@ -23,13 +23,20 @@ const HOME = _ => {
         </p>
         <h1 className="title">Nuestros Productos</h1>
         <div className="products">
-          <img className='products1 productsImg' src={Products1} alt="Imagen alusiva a los productos elaborados" />
-          <img className='products2 productsImg' src={Products2} alt="Imagen alusiva a los productos elaborados" />
+          <img
+            className="products1 productsImg"
+            src={Products1}
+            alt="Imagen alusiva a los productos elaborados"
+          />
+          <img
+            className="products2 productsImg"
+            src={Products2}
+            alt="Imagen alusiva a los productos elaborados"
+          />
         </div>
-        <button className='buttonProducts'>Productos</button>
       </main>
     </>
   );
 }
 
-export default HOME;
+export default Home;
