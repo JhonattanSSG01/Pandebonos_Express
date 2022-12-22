@@ -1,17 +1,16 @@
 /* Misión de la empresa */
 .legendWelcome{
   width: 90%;
-  margin: auto;
+  margin: 3.5rem auto;
 }
 
 .legendWelcome img {
   width: 100%;
-  margin: 2rem 0 1rem 0;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .title {
-  margin: 0;
+  margin: .5rem 0;
   font-size: 22px;
   text-align: center;
   color: var(--colorText);

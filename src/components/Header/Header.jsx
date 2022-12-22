@@ -1,21 +1,57 @@
-import React from 'react';
-import './header.css';
-import img from './assets/logo.jpeg';
+import { React, useState } from "react";
+import "./header.css";
+import "../Nav_Icon/navIcon.css";
+import img from "./assets/logo.jpeg";
 
+const Header = () => {
+  const [menu, setMenu] = useState(false);
 
-const Header = _ => {
+  const toggleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
-    <>
-      <header>
-        <div className="headerContainer">
-          <img className="logo" src={img} alt="logo de la microempesa" />
-          <div className="iconNav">
-            <i className="ri-function-line icon"></i>
-          </div>
+    <header className="Cabecera">
+      <div className="headerContainer">
+        <img className="logo" src={img} alt="logo de la microempesa" />
+        <div className="iconNav">
+          <button onClick={toggleMenu} className="Cabecera-button">
+            <i className="ri-function-line icon" />
+          </button>
         </div>
-      </header>
-    </>
+      </div>
+
+      <nav className={`Cabecera-nav ${menu ? "isActive" : ""}`}>
+        <ul className="Cabecera-ul">
+          <li className="Cabecera-li">
+            <a href="#" className="Cabecera-a">
+              Item 1
+            </a>
+          </li>
+          <li className="Cabecera-li">
+            <a href="#" className="Cabecera-a">
+              Item 2
+            </a>
+          </li>
+          <li className="Cabecera-li">
+            <a href="#" className="Cabecera-a">
+              Item 3
+            </a>
+          </li>
+          <li className="Cabecera-li">
+            <a href="#" className="Cabecera-a">
+              Item 4
+            </a>
+          </li>
+          <li className="Cabecera-li">
+            <a href="#" className="Cabecera-a">
+              Item 5
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
-}
+};
 
 export default Header;

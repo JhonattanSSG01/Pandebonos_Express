@@ -5,11 +5,16 @@ import App from './App';
 import 'remixicon/fonts/remixicon.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Categories from './components/Categories/Categories';
+import Home from './components/Home/Home';
 
 const router = createBrowserRouter([
   {
     path: '/categories',
     element: <Categories />
+  },
+  {
+    path: '/home',
+    element: <Home />
   },
   {
     path: '/',
