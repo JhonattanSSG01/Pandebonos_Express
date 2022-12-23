@@ -1,0 +1,28 @@
+.card{
+  width: 90%;
+  margin: 4rem auto 0 auto;
+  position: relative;
+}
+
+.card > img{
+  width: 100%;
+  height: 15rem;
+  margin: auto;
+  object-fit: cover;
+  opacity: .8;
+  
+}
+
+.card::after{
+  content: 'Productos Elaborados';
+  text-align: center;
+  font-size: 2rem;
+  color: var(--colorGlobal);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+}

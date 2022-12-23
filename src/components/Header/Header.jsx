@@ -31,7 +31,7 @@ const Header = () => {
           </li>
           <li className="Cabecera-li">
             <Link to="/categories" className="href">
-              Categorias
+              Productos
             </Link>
           </li>
           <li className="Cabecera-li">

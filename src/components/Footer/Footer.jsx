@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import Logo from "./assets/logo.jpeg";
+import FooterAll from "../Delivery/Delivery";
 
 const Footer = _ => {
   return (
@@ -12,24 +13,7 @@ const Footer = _ => {
             Nuestro equipo está dispuesto a brindarle los mejores productos de
             queso y panadería.
           </h3>
-          <div className="socialMedia">
-            <section className="address">
-              <h5>
-                Dirección: Carrera 75 # 0-30, Kennedy- Bogotá
-                <br />
-                Teléfonos: 4512484-2645013
-              </h5>
-            </section>
-            <section className="icons">
-              <i className="ri-facebook-circle-fill"></i>
-              <i className="ri-instagram-line"></i>
-              <i className="ri-whatsapp-line"></i>
-              <i className="ri-navigation-fill"></i>
-            </section>
-            <section className="credits">
-              <p>Pandebonos Express | 2022</p>
-            </section>
-          </div>
+          <FooterAll/>
         </div>
       </footer>
     </>
