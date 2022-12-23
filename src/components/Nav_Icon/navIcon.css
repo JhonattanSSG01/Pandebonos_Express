@@ -23,8 +23,14 @@
   align-items: center;
 }
 .Cabecera-li {
-  margin: 0 0.5em;
+  margin: 0 1rem;
+  list-style: none;
 }
+.Cabecera-li > .href {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--colorGlobal);
+  }
 @media screen and (max-width: 480px) {
   .Cabecera-button {
     display: flex;
@@ -46,7 +52,7 @@
     transition: all 0.5s ease;
   }
   .Cabecera-nav.isActive {
-    height: 100vh;
+    height: 92vh;
     opacity: 1;
   }
   .Cabecera-ul {
@@ -60,7 +66,7 @@
   }
   .Cabecera-li > .href {
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--colorGlobal);
   }
 }
