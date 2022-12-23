@@ -13,16 +13,19 @@
   
 }
 
-.card::after{
-  content: 'Productos Elaborados';
-  text-align: center;
-  font-size: 2rem;
+.link{
+  text-decoration: none;
   color: var(--colorGlobal);
+}
+
+.card h2{
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  margin: auto;
   display: grid;
   place-items: center;
+  text-align: center;
 }
