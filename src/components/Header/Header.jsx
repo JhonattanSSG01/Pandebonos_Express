@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import "./header.css";
 import "../Nav_Icon/navIcon.css";
 import img from "./assets/logo.jpeg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -24,29 +25,24 @@ const Header = () => {
       <nav className={`Cabecera-nav ${menu ? "isActive" : ""}`}>
         <ul className="Cabecera-ul">
           <li className="Cabecera-li">
-            <a href="#" className="Cabecera-a">
-              Item 1
-            </a>
+            <Link to="/home" className="href">
+              Inicio
+            </Link>
           </li>
           <li className="Cabecera-li">
-            <a href="#" className="Cabecera-a">
-              Item 2
-            </a>
+            <Link to="/categories" className="href">
+              Categorias
+            </Link>
           </li>
           <li className="Cabecera-li">
-            <a href="#" className="Cabecera-a">
-              Item 3
-            </a>
+            <Link to="/Questions" className="href">
+              FAQ
+            </Link>
           </li>
           <li className="Cabecera-li">
-            <a href="#" className="Cabecera-a">
-              Item 4
-            </a>
-          </li>
-          <li className="Cabecera-li">
-            <a href="#" className="Cabecera-a">
-              Item 5
-            </a>
+            <Link to="/Delivery" className="href">
+              Pedido
+            </Link>
           </li>
         </ul>
       </nav>

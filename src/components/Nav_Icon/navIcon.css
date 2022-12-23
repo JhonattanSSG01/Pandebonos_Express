@@ -50,9 +50,17 @@
     opacity: 1;
   }
   .Cabecera-ul {
+    padding: 0;
+    margin: 0;
     flex-direction: column;
   }
   .Cabecera-li {
-    margin: 0.5em 0;
+    margin: 2em 0;
+    list-style: none;
+  }
+  .Cabecera-li > .href {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--colorGlobal);
   }
 }
