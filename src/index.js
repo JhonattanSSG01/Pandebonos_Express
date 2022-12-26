@@ -6,7 +6,7 @@ import 'remixicon/fonts/remixicon.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Categories from './components/Categories/Categories';
-import Data from './Data.json';
+import DataCategories from './DataCategories.json';
 import Header from './components/Header/Header';
 import FooterAll from './components/Footer/FooterAll';
 
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         <Header />
         <h2 style={{margin: '4rem 0', textAlign: 'center', color: 'var(--colorText)', fontSize: '2rem'}}>Productos</h2>
         {
-          Data.map(info => {
+          DataCategories.map(info => {
             return (
               <Categories
                 key={info.id}
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
               />
             )
           })
-        }
+        };
         <FooterAll />
       </>
   },
