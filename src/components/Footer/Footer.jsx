@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 import Logo from "./assets/logo.jpeg";
-import FooterAll from "../Delivery/Delivery";
+import FooterAll from "./FooterAll";
 
 const Footer = _ => {
   return (
