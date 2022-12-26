@@ -25,15 +25,15 @@ const imagenes = [
   },
 ];
 
-const Categories = (_) => {
+const Categories = _ => {
   return (
     <>
       <Header />
-      {imagenes.map((img) => {
+      {imagenes.map((img, index) => {
         return (
-          <Link to="/" className="link">
-            <div className="card" key={img.id}>
-              <img src={img.image} alt="" />
+          <Link to="/productos" className="link">
+            <div className="card" key={index}>
+              <img src={img.image} alt="Imagen de la tarjeta" />
               <h2>{img.title}</h2>
             </div>
           </Link>

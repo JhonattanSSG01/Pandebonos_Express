@@ -7,7 +7,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 
-const Home = (_) => {
+const Home = _ => {
   return (
     <>
       <Header />
