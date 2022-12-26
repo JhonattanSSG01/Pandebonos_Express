@@ -4,7 +4,7 @@ import FooterAll from "../Delivery/Delivery";
 import Header from "../Header/Header";
 import "./categories.css";
 
-const Categories = (props) => {
+const Categories = props => {
   return (
     <>
       <Link to="/productos">
