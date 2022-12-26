@@ -15,7 +15,6 @@
 
 .link{
   text-decoration: none;
-  color: var(--colorGlobal);
 }
 
 .card h2{
@@ -28,4 +27,5 @@
   display: grid;
   place-items: center;
   text-align: center;
+  color: var(--colorGlobal);
 }
