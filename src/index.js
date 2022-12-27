@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import 'remixicon/fonts/remixicon.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Categories from './components/Categories/Categories';
-import DataCategories from './DataCategories.json';
-import DataProducts from './DataProducts.json';
 import Header from './components/Header/Header';
 import FooterAll from './components/Footer/FooterAll';
 import Products from './components/Card_Products/CardProducts';
+import DataCategories from './DataCategories.json';
+import DataProducts from './DataProducts.json';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
