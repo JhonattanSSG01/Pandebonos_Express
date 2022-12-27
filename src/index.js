@@ -7,7 +7,7 @@ import Home from './components/Home/Home';
 import Categories from './components/Categories/Categories';
 import Header from './components/Header/Header';
 import FooterAll from './components/Footer/FooterAll';
-import CardProducts from './components/Card_Products/CardProducts';
+import CardProducts from './components/Card_Products/cardProducts';
 import DataCategories from './DataCategories.json';
 import DataProducts from './DataProducts.json';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
