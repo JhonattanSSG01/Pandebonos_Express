@@ -7,7 +7,7 @@ import Home from './components/Home/Home';
 import Categories from './components/Categories/Categories';
 import Header from './components/Header/Header';
 import FooterAll from './components/Footer/FooterAll';
-import Products from './components/Card_Products/CardProducts';
+import CardProducts from './components/Card_Products/CardProducts';
 import DataCategories from './DataCategories.json';
 import DataProducts from './DataProducts.json';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         {
           DataProducts.map(info => {
             return (
-              <Products
+              <CardProducts
                 key={info.id}
                 url={info.url}
                 text={info.text}
