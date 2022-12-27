@@ -42,7 +42,7 @@ const router = createBrowserRouter([
     element:
       <>
         <Header />
-        <h2 style={{ margin: '4rem 0 1rem 0', textAlign: 'center', color: 'var(--colorText)', fontSize: '2rem' }}>Productos Elaborados</h2>
+        <h2 style={{ margin: '4rem 0 2rem 0', textAlign: 'center', color: 'var(--colorText)', fontSize: '1.7rem' }}>Productos Elaborados</h2>
         {
           DataProducts.map(info => {
             return (
