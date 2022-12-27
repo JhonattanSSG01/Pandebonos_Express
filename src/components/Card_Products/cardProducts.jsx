@@ -1,14 +1,16 @@
-import React from 'react';
-import './cardProducts.css';
+import React from "react";
+import "./cardProducts.css";
 
-const Products = props => {
+const Products = (props) => {
   return (
     <div className="containerProducts">
       <div className="image">
-        <img src={props.url} alt="Imagen del producto" />
+        <section>
+          <img src={props.url} alt="Imagen del producto" />
+        </section>
         <p className="text">{props.text}</p>
-        <h3 className="title">{props.title}</h3>
       </div>
+      <h3 className="name">{props.title}</h3>
       <div className="price">
         <section>
           <h4 className="size">{props.pequeño}</h4>
@@ -25,4 +27,6 @@ const Products = props => {
       </div>
     </div>
   );
-}
+};
+
+export default Products;

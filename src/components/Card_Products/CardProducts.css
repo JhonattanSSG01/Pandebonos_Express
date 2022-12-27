@@ -1,0 +1,56 @@
+.containerProducts{
+  width: 90%;
+  margin: 1.5rem auto;
+  padding: .5rem;
+  background-color: var(--colorText);
+}
+
+.containerProducts .image {
+  position: relative;
+}
+
+.containerProducts .image img{
+  width: 100%;
+  height: 15rem;
+  opacity: .6;
+}
+
+.text {
+  padding: 0 1rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: justify;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  color: var(--colorGlobal);
+}
+.price > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3{
+  color: var(--colorGlobal);
+  text-align: center;
+}
+
+.price .size{
+  color: var(--colorGlobal);
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.price .buttonAdd{
+  background-color: var(--colorBody);
+  outline: none;
+  border: none;
+  border-radius: .3rem;
+  color: var(--colorText);
+  font-size: 1.2rem;
+  font-family: var(--fontPrincipal);
+}
