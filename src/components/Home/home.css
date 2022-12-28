@@ -101,11 +101,11 @@ main > .textPrincipal {
 
   /* Nuestros Productos */
   .products {
-    height: 300px;
+    height: 340px;
   }
 
   .productsImg {
-    height: 280px;
+    height: 320px;
     border-radius: 20px;
   }
 

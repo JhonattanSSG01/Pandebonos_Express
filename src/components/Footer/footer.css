@@ -1,46 +1,75 @@
-footer > .containerFooter{
+/* Footer */
+footer > .containerFooter {
   width: 100%;
-  margin: 4rem 0 .5rem 0;
-  padding: 3rem 0 .1rem 0; 
-  border-radius: 1rem;
+  margin: 64px 0 8px 0;
+  padding: 48px 0 2px 0;
+  border-radius: 16px;
   background-color: var(--colorFooter);
   position: relative;
 }
 
-.containerFooter img{
-  width: 5rem;
-  height: 5rem;
+.containerFooter img {
+  width: 80px;
+  height: 80px;
   margin: auto;
   text-align: center;
   border-radius: 50%;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, .5);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: -2rem;
+  top: -32px;
   left: 0;
   right: 0;
 }
 
-.titleFooter{
-  padding: 1rem .5rem;
+.titleFooter {
+  padding: 16px 8px;
+  font-size: clamp(18px, 5vw, 28px);
   font-weight: 300;
   text-align: center;
   color: var(--colorNav);
 }
 
-.socialMedia{
+/* Footer direccion y redes sociales */
+.socialMedia {
   text-align: center;
 }
 
-.socialMedia > .address > h5{
+.socialMedia > .address > h5 {
   font-weight: 400;
+  font-size: clamp(12px, 5vw, 22px);
 }
 
-.socialMedia > .icons > a{
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy > .icons > a {
   text-decoration: none;
   color: var(--colorGlobalFooter);
 }
 
-.socialMedia > .icons i{
-  font-size: 35px;
-  margin: 1rem;
+.copy > .icons i {
+  font-size: clamp(35px, 5vw, 48px);
+  margin: 16px;
+}
+
+.credits p {
+  font-size: clamp(18px, 5vw, 25px);
+}
+
+@media only screen and (min-width: 480px) {
+  /* Footer */
+  .containerFooter img {
+    width: 100px;
+    height: 100px;
+    top: -45px;
+  }
+
+  /* Footer direccion y redes sociales */
+  .copy {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

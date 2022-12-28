@@ -4,7 +4,7 @@ import Welcome from "./assets/welcome.jpg";
 import Products1 from "./assets/categoria1.jpg";
 import Products2 from "./assets/categoria2.jpg";
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import { Footer } from "../Footer/Footer";
 import { Link } from "react-router-dom";
 
 const Home = _ => {

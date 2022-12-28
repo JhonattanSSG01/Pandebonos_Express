@@ -6,7 +6,7 @@ import 'remixicon/fonts/remixicon.css';
 import Home from './components/Home/Home';
 import Categories from './components/Categories/Categories';
 import Header from './components/Header/Header';
-import FooterAll from './components/Footer/FooterAll';
+import { FooterAll } from './components/Footer/Footer';
 import CardProducts from './components/Card_Products/cardProducts';
 import DataCategories from './DataCategories.json';
 import DataProducts from './DataProducts.json';
