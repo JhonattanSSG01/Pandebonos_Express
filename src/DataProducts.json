@@ -7,9 +7,10 @@
     "pequeño": "Tamaño Pequeño",
     "mediano": "Tamaño Mediano",
     "grande": "Tamaño Grande",
-    "precioPequeño": "20g || $600",
+    "precioPequeño": 600,
     "precioMediano": "40g || $1.000",
-    "precioGrande": "60g || $2.000"
+    "precioGrande": "60g || $2.000",
+    "quantity": 1
   },
   {
     "id": 1002,
@@ -19,9 +20,10 @@
     "pequeño": "Tamaño Pequeño",
     "mediano": "Tamaño Mediano",
     "grande": "Tamaño Grande",
-    "precioPequeño": "20g || $600",
+    "precioPequeño": 600,
     "precioMediano": "40g || $1.000",
-    "precioGrande": "60g || $2.000"
+    "precioGrande": "60g || $2.000",
+    "quantity": 1
   },
   {
     "id": 1003,
@@ -31,9 +33,10 @@
     "pequeño": "Tamaño Pequeño",
     "mediano": "Tamaño Mediano",
     "grande": "Tamaño Grande",
-    "precioPequeño": "20g || $600",
+    "precioPequeño": 600,
     "precioMediano": "40g || $1.000",
-    "precioGrande": "60g || $2.000"
+    "precioGrande": "60g || $2.000",
+    "quantity": 1
   },
   {
     "id": 1004,
@@ -43,9 +46,10 @@
     "pequeño": "Tamaño Pequeño",
     "mediano": "Tamaño Mediano",
     "grande": "Tamaño Grande",
-    "precioPequeño": "20g || $600",
+    "precioPequeño": 600,
     "precioMediano": "40g || $1.000",
-    "precioGrande": "60g || $2.000"
+    "precioGrande": "60g || $2.000",
+    "quantity": 1
   },
   {
     "id": 1005,
@@ -55,9 +59,10 @@
     "pequeño": "Tamaño Pequeño",
     "mediano": "Tamaño Mediano",
     "grande": "Tamaño Grande",
-    "precioPequeño": "20g || $600",
+    "precioPequeño": 600,
     "precioMediano": "40g || $1.000",
-    "precioGrande": "60g || $2.000"
+    "precioGrande": "60g || $2.000",
+    "quantity": 1
   },
   {
     "id": 1006,
@@ -67,9 +72,10 @@
     "pequeño": "Tamaño Pequeño",
     "mediano": "Tamaño Mediano",
     "grande": "Tamaño Grande",
-    "precioPequeño": "20g || $600",
+    "precioPequeño": 600,
     "precioMediano": "40g || $1.000",
-    "precioGrande": "60g || $2.000"
+    "precioGrande": "60g || $2.000",
+    "quantity": 1
   },
   {
     "id": 1007,
@@ -79,9 +85,10 @@
     "pequeño": "Tamaño Pequeño",
     "mediano": "Tamaño Mediano",
     "grande": "Tamaño Grande",
-    "precioPequeño": "20g || $600",
+    "precioPequeño": 600,
     "precioMediano": "40g || $1.000",
-    "precioGrande": "60g || $2.000"
+    "precioGrande": "60g || $2.000",
+    "quantity": 1
   },
   {
     "id": 1008,
@@ -91,8 +98,9 @@
     "pequeño": "Tamaño Pequeño",
     "mediano": "Tamaño Mediano",
     "grande": "Tamaño Grande",
-    "precioPequeño": "20g || $600",
+    "precioPequeño": 600,
     "precioMediano": "40g || $1.000",
-    "precioGrande": "60g || $2.000"
+    "precioGrande": "60g || $2.000",
+    "quantity": 1
   }
 ]

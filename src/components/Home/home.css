@@ -24,7 +24,7 @@
   color: var(--colorNav);
 }
 
-main > .text {
+main > .textPrincipal {
   margin: 1rem 0;
   padding: 1rem;
   font-size: 18px;

@@ -17,11 +17,13 @@ const Home = _ => {
           <h1 className="title">Pandebono Express</h1>
           <h3 className="subtitle">La felicidad huele Amasijo recién hecho</h3>
         </div>
-        <p className="text">
+        <p className="textPrincipal">
           Desarrollar, elaborar y comercializar productos a base de queso y
           bebidas típicas acompañantes que nos permiten cutivar a nuestros
-          clientes con productos frescos y calienticos. <br />
-          <br /> Buscamos el desarrollo y el lograr de nuestros objetivos
+          clientes con productos frescos y calienticos. 
+          <br />
+          <br /> 
+          Buscamos el desarrollo y el lograr de nuestros objetivos
           empresariales que permitan mejorar la calidad de vida de nuestros
           colaboradores y asegurar la rentabilidad de nuestros inversionistas.
         </p>
