@@ -1,28 +1,33 @@
-.containerProducts{
+.containerGlobal {
+  display: flex;
+}
+/* Imagen y texto */
+.containerProducts {
   width: 90%;
-  margin: 1.5rem auto;
-  padding: .5rem;
+  margin: 24px auto;
+  padding: 8px;
   background-color: var(--colorText);
 }
 
-.containerProducts .image {
+.containerProducts > .image {
   position: relative;
 }
 
-.containerProducts > .image > section{
-  background-color: rgba(0, 0, 0, .5);
+.containerProducts > .image > section {
+  background-color: rgba(0, 0, 0, 0.5);
   height: 15rem;
 }
 
-.containerProducts .image img{
+.containerProducts > .image img {
   width: 100%;
   height: inherit;
-  opacity: .6;
-  box-shadow: 0 18px 15px rgba(0, 0, 0, .6) ;
+  object-fit: cover;
+  opacity: 0.6;
+  box-shadow: 0 18px 15px rgba(0, 0, 0, 0.6);
 }
 
 .text {
-  padding: 0 1rem;
+  padding: 0 16px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -31,16 +36,18 @@
   text-align: justify;
   display: grid;
   place-items: center;
-  font-size: 1.3rem;
+  font-size: clamp(18px, 5vw, 25px);
   color: var(--colorGlobal);
 }
 
-.name{
-  font-size: 1.5rem;
-  margin: 1rem;
+/* Nombre, tamaños y precios */
+.name {
+  font-size: clamp(24px, 5vw, 30px);
+  margin: 16px;
 }
+
 .price {
-  padding: .5rem;
+  padding: 8px;
 }
 
 .price > section {
@@ -49,26 +56,39 @@
   align-items: center;
 }
 
-h3{
+h3 {
   color: var(--colorGlobal);
   text-align: center;
 }
 
-.price .size{
+.price .size {
   color: var(--colorGlobal);
-  font-size: 1.2rem;
+  font-size: clamp(18px, 5vw, 25px);
   font-weight: 200;
-  margin: 1rem 0;
+  margin: 16px 0;
 }
 
-.price .buttonAdd{
-  width: 8.2rem;
-  background-color: var(--colorBody);
+.price .buttonAdd {
+  width: 180px;
   outline: none;
   border: none;
-  border-radius: .3rem;
+  border-radius: 5px;
   color: var(--colorText);
-  font-size: 1.2rem;
+  font-size: clamp(18px, 5vw, 25px);
   font-family: var(--fontPrincipal);
-  box-shadow: 5px 8px 20px rgba(0, 0, 0, .5);
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background-color: var(--colorBody);
+}
+
+@media only screen and (min-width: 768px) {
+  .containerProducts {
+    width: 40%;
+  }
+
+  .price .buttonAdd:hover{
+    box-shadow: inset 2px 3px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--colorText);
+    color: var(--colorBody);
+  }
 }

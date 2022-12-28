@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FooterAll from "../Delivery/Delivery";
-import Header from "../Header/Header";
 import "./categories.css";
 
 const Categories = props => {

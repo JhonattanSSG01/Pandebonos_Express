@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     element:
       <>
         <Header />
-        <h2 style={{margin: '4rem 0', textAlign: 'center', color: 'var(--colorText)', fontSize: '2rem'}}>Productos</h2>
+        <h2 style={{ margin: '4rem 0', textAlign: 'center', color: 'var(--colorText)', fontSize: '2rem' }}>Productos</h2>
         {
           DataCategories.map(info => {
             return (
@@ -43,24 +43,27 @@ const router = createBrowserRouter([
       <>
         <Header />
         <h2 style={{ margin: '4rem 0 2rem 0', textAlign: 'center', color: 'var(--colorText)', fontSize: '1.7rem' }}>Productos Elaborados</h2>
-        {
-          DataProducts.map(info => {
-            return (
-              <CardProducts
-                key={info.id}
-                url={info.url}
-                text={info.text}
-                title={info.title}
-                pequeño={info.pequeño}
-                mediano={info.mediano}
-                grande={info.grande}
-                precioPequeño={info.precioPequeño}
-                precioMediano={info.precioMediano}
-                precioGrande={info.precioGrande}
-              />
-            )
-          })
-        };
+        <div style={{ display: 'flex', flexWrap: 'wrap'}}>
+          {
+            DataProducts.map(info => {
+              return (
+                <CardProducts
+                  key={info.id}
+                  url={info.url}
+                  text={info.text}
+                  title={info.title}
+                  pequeño={info.pequeño}
+                  mediano={info.mediano}
+                  grande={info.grande}
+                  precioPequeño={info.precioPequeño}
+                  precioMediano={info.precioMediano}
+                  precioGrande={info.precioGrande}
+                />
+              )
+            })
+          };
+
+        </div>
         <FooterAll />
       </>
   },
