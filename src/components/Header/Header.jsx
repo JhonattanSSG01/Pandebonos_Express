@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import "./header.css";
-import "../Nav_Icon/navIcon.css";
 import img from "./assets/logo.jpeg";
 import { Link } from "react-router-dom";
 
@@ -12,35 +11,35 @@ const Header = () => {
   };
 
   return (
-    <header className="Cabecera">
+    <header>
       <div className="headerContainer">
         <img className="logo" src={img} alt="logo de la microempesa" />
         <div className="iconNav">
-          <button onClick={toggleMenu} className="Cabecera-button">
+          <button onClick={toggleMenu} className="buttonToggle">
             <i className="ri-function-line icon" />
           </button>
         </div>
       </div>
 
-      <nav className={`Cabecera-nav ${menu ? "isActive" : ""}`}>
-        <ul className="Cabecera-ul">
-          <li className="Cabecera-li">
-            <Link to="/home" className="href">
+      <nav className={`nav ${menu ? "isActive" : ""}`}>
+        <ul className="containerItems">
+          <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
+            <Link onClick={toggleMenu} to="/home" className="href">
               Inicio
             </Link>
           </li>
-          <li className="Cabecera-li">
-            <Link to="/categories" className="href">
+          <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
+            <Link onClick={toggleMenu} to="/categories" className="href">
               Productos
             </Link>
           </li>
-          <li className="Cabecera-li">
-            <Link to="/questions" className="href">
+          <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
+            <Link onClick={toggleMenu} to="/questions" className="href">
               FAQ
             </Link>
           </li>
-          <li className="Cabecera-li">
-            <Link to="/delivery" className="href">
+          <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
+            <Link onClick={toggleMenu} to="/delivery" className="href">
               Pedido
             </Link>
           </li>
