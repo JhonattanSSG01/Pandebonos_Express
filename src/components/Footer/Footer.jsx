@@ -42,7 +42,6 @@ export const FooterAll = _ => {
           </section>
         </div>
       </div>
-      ;
     </>
   );
 };

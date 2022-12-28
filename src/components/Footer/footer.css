@@ -61,6 +61,10 @@ footer > .containerFooter {
 
 @media only screen and (min-width: 480px) {
   /* Footer */
+  footer > .containerFooter {
+    width: 95%;
+    margin: 50px auto;
+  }
   .containerFooter img {
     width: 100px;
     height: 100px;

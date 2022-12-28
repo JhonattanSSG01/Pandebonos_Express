@@ -92,6 +92,7 @@ main > .textPrincipal {
 
   .legendWelcome img {
     width: 70%;
+    margin-left: 10px;
   }
 
   main > .textPrincipal {
