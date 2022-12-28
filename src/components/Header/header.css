@@ -135,4 +135,13 @@ header > .headerContainer {
   .containerItems > .items {
     margin: 0 30px;
   }
+
+  .items > .href:hover {
+    color: var(--colorText);
+  }
+
+  .items > .href > i:hover {
+    background-color: var(--colorFooter);
+    color: var(--colorText);
+  }
 }
