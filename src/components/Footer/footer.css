@@ -22,7 +22,7 @@ footer > .containerFooter {
 }
 
 .titleFooter {
-  padding: 16px 8px;
+  padding: 25px 8px;
   font-size: clamp(18px, 5vw, 28px);
   font-weight: 300;
   text-align: center;
@@ -72,7 +72,12 @@ footer > .containerFooter {
   }
 
   /* Footer direccion y redes sociales */
+  .socialMedia > .address {
+    padding: 30px 0;
+  }
+
   .copy {
+    padding: 30px 0;
     flex-direction: row;
     justify-content: space-around;
   }

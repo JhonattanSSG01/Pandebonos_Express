@@ -1,32 +1,88 @@
 import React from "react";
 import "./CardProducts.css";
+import DataProducts from "../../DataProducts.json";
+import Header from "../Header/Header";
+import { FooterAll } from "../Footer/Footer";
 
-const CardProducts = (props) => {
+export const CardProducts = ({
+  allProducts,
+  setAllProducts,
+  countProducts,
+  setCountProducts,
+  total,
+  setTotal,
+}) => {
+  const onAddProduct = (product) => {
+    if (allProducts.find((item) => item.id === product.id)) {
+      const products = allProducts.map((item) =>
+        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+      );
+      setTotal(total + product.precioPequeño * product.quantity);
+      setCountProducts(countProducts + product.quantity);
+      return setAllProducts([...products]);
+    }
+
+    setTotal(total + product.precioPequeño * product.quantity);
+    setCountProducts(countProducts + product.quantity);
+    setAllProducts([...allProducts, product]);
+  };
+
   return (
-    <div className="containerProducts">
-      <div className="image">
-        <section>
-          <img src={props.url} alt="Imagen del producto" />
-        </section>
-        <p className="text">{props.text}</p>
+    <>
+      <Header />
+        <h2
+          style={{
+            margin: "4rem 0 2rem 0",
+            textAlign: "center",
+            color: "var(--colorText)",
+            fontSize: "2rem",
+          }}
+        >
+          Productos Elaborados
+        </h2>
+      <div
+        className="containerGlobal"
+        style={{ display: "flex", flexWrap: "wrap" }}
+      >
+        {DataProducts.map((product) => {
+          return (
+            <div className="containerProducts" key={product.id}>
+              <div className="image">
+                <section>
+                  <img src={product.url} alt="Imagen del producto" />
+                </section>
+                <p className="text">{product.text}</p>
+              </div>
+              <h3 className="name">{product.title}</h3>
+              <div className="price">
+                <section>
+                  <h4 className="size">{product.pequeño}</h4>
+                  <button
+                    onClick={() => onAddProduct(product)}
+                    className="buttonAdd"
+                  >{`20g || $${product.precioPequeño}`}</button>
+                </section>
+                <section>
+                  <h4 className="size">{product.mediano}</h4>
+                  <button
+                    onClick={() => onAddProduct(product)}
+                    className="buttonAdd"
+                  >{`40g || $${product.precioMediano}`}</button>
+                </section>
+                <section>
+                  <h4 className="size">{product.grande}</h4>
+                  <button
+                    onClick={() => onAddProduct(product)}
+                    className="buttonAdd"
+                  >{`70g || $${product.precioGrande}`}</button>
+                </section>
+              </div>
+            </div>
+          );
+        })}
+        ;
       </div>
-      <h3 className="name">{props.title}</h3>
-      <div className="price">
-        <section>
-          <h4 className="size">{props.pequeño}</h4>
-          <button className="buttonAdd">{`20g || $${props.precioPequeño}`}</button>
-        </section>
-        <section>
-          <h4 className="size">{props.mediano}</h4>
-          <button className="buttonAdd">{`40g || $${props.precioMediano}`}</button>
-        </section>
-        <section>
-          <h4 className="size">{props.grande}</h4>
-          <button className="buttonAdd">{`70g || $${props.precioGrande}`}</button>
-        </section>
-      </div>
-    </div>
+      <FooterAll />
+    </>
   );
 };
-
-export default CardProducts;

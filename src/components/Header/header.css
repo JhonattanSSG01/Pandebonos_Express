@@ -91,13 +91,6 @@ header > .headerContainer {
   color: var(--colorGlobal);
 }
 
-.items > .href > i {
-  padding: 8px;
-  border-radius: 50%;
-  background-color: var(--colorText);
-  color: var(--colorNav);
-}
-
 @media screen and (min-width: 480px) {
   header {
     flex-wrap: nowrap;
@@ -140,8 +133,5 @@ header > .headerContainer {
     color: var(--colorText);
   }
 
-  .items > .href > i:hover {
-    background-color: var(--colorFooter);
-    color: var(--colorText);
-  }
+  
 }
