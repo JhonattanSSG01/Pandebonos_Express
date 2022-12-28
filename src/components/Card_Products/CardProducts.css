@@ -83,12 +83,16 @@ h3 {
 
 @media only screen and (min-width: 768px) {
   .containerProducts {
-    width: 40%;
+    width: 35%;
   }
 
-  .price .buttonAdd:hover{
+  .price .buttonAdd:hover {
     box-shadow: inset 2px 3px 10px rgba(0, 0, 0, 0.5);
     background-color: var(--colorText);
     color: var(--colorBody);
+  }
+  .price > section {
+    width: 80%;
+    margin: auto;
   }
 }

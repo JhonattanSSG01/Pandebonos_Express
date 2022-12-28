@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import "./header.css";
-import img from "./assets/logo.jpeg";
+import Logo from "./assets/logo.jpeg";
 import { Link } from "react-router-dom";
 import { CartBuy } from "../Cart_Buy/CartBuy";
 
@@ -19,7 +19,9 @@ const Header = _ => {
     <>
       <header>
         <div className="headerContainer">
-          <img className="logo" src={img} alt="logo de la microempesa" />
+          <Link to="/home">
+            <img className="logo" src={Logo} alt="logo de la microempesa" />
+          </Link>
           <div className="iconNav">
             <button onClick={toggleMenu} className="buttonToggle">
               <i className="ri-function-line icon" />

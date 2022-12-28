@@ -1,0 +1,65 @@
+.listQuestions, .message {
+  max-width: 1200px;
+  margin: 80px auto;
+}
+
+details > .questions {
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  content: "";
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--colorText);
+  cursor: pointer;
+  background-color: var(--colorFooter);
+}
+
+details > p{
+  padding: 18px;
+  font-size: 30px;
+  text-align: justify;
+  color: var(--colorBody);
+  background-color: var(--colorText);
+}
+
+details i{
+  font-size: 40px;
+  transition: all .5s ease;
+}
+
+details[open] i{
+  transform: rotate(90deg);
+  transition: all .5s ease;
+}
+
+.message > p{
+  margin: 30px 0;
+  padding: 40px;
+  font-size: 30px;
+  color: var(--colorText);
+}
+
+.containerButton{
+  width: 30%;
+  margin-left: auto;
+}
+
+.containerButton > .buttonInfo{
+  padding: 15px;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  border-radius: 15px;
+  color: var(--colorText);
+  background-color: var(--colorFooter);
+  cursor: pointer;
+}
+
+.containerButton > .buttonInfo:hover{
+  color: var(--colorFooter);
+  background-color: var(--colorText);
+  transform: scale(1.1);
+  transition: all .5s ease-in-out;
+}

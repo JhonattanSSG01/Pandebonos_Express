@@ -80,7 +80,6 @@ export const CardProducts = ({
             </div>
           );
         })}
-        ;
       </div>
       <FooterAll />
     </>

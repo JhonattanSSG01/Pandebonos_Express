@@ -6,7 +6,6 @@ header {
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
-  color: var(--colorGlobal);
 }
 
 header > .headerContainer {
@@ -17,7 +16,7 @@ header > .headerContainer {
   align-items: center;
 }
 
-.headerContainer > .logo {
+.headerContainer .logo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -96,7 +95,11 @@ header > .headerContainer {
     flex-wrap: nowrap;
   }
 
-  .headerContainer > .logo {
+  header > .headerContainer {
+    justify-content: space-around;
+  }
+
+  .headerContainer .logo {
     width: 100px;
     height: 100px;
   }
@@ -132,6 +135,4 @@ header > .headerContainer {
   .items > .href:hover {
     color: var(--colorText);
   }
-
-  
 }

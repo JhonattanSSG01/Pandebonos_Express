@@ -5,12 +5,9 @@ import App from './App';
 import 'remixicon/fonts/remixicon.css';
 import Home from './components/Home/Home';
 import Categories from './components/Categories/Categories';
-import Header from './components/Header/Header';
-import { FooterAll } from './components/Footer/Footer';
-import {CardProducts} from './components/Card_Products/cardProducts';
-import DataCategories from './DataCategories.json';
-import DataProducts from './DataProducts.json';
+import { CardProducts } from './components/Card_Products/cardProducts';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Faq from './components/Questions/Questions';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/productos',
     element: <CardProducts />
+  },
+  {
+    path: '/questions',
+    element: <Faq />
   },
   {
     path: '/',

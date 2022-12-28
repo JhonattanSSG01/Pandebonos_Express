@@ -22,14 +22,13 @@ const Categories = props => {
       {DataCategories.map((info) => {
         return (
           <Link to="/productos">
-            <div className="card">
+            <div className="card" key={info.id}>
               <img src={info.url} alt="Imagen de la tarjeta" />
               <h2>{info.title}</h2>
             </div>
           </Link>
         );
       })}
-      ;
       <FooterAll />
       
     </>
