@@ -1,12 +1,12 @@
 /* Header */
 header {
   background-color: var(--colorNav);
-  padding: 1rem;
+  padding: 16px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
-  color: #fff;
+  color: var(--colorGlobal);
 }
 
 header > .headerContainer {
@@ -15,7 +15,6 @@ header > .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--colorNav);
 }
 
 .headerContainer > .logo {
@@ -56,8 +55,6 @@ header > .headerContainer {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  overflow: hidden;
   transition: all 0.5s ease;
 }
 
@@ -90,14 +87,42 @@ header > .headerContainer {
 
 .items > .href {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--colorGlobal);
 }
 
+.items > .href > i {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: var(--colorText);
+  color: var(--colorNav);
+}
+
 @media screen and (min-width: 480px) {
+  header {
+    flex-wrap: nowrap;
+  }
+
+  .headerContainer > .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .iconNav {
+    display: none;
+  }
+
   .buttonToggle {
     display: none;
     cursor: pointer;
+  }
+
+  .nav {
+    opacity: 1;
+  }
+
+  .items.isNotActive {
+    display: block;
   }
 
   .containerItems {
@@ -109,6 +134,5 @@ header > .headerContainer {
 
   .containerItems > .items {
     margin: 0 30px;
-    list-style: none;
   }
 }

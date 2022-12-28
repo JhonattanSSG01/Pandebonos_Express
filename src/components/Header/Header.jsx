@@ -40,7 +40,7 @@ const Header = () => {
           </li>
           <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
             <Link onClick={toggleMenu} to="/delivery" className="href">
-              Pedido
+              <i className="ri-shopping-cart-line"></i>
             </Link>
           </li>
         </ul>
