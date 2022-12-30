@@ -103,25 +103,11 @@ const CardProducts = () => {
               <h3 className="name">{product.title}</h3>
               <div className="price">
                 <section>
-                  <h4 className="size">{product.pequeño}</h4>
+                  <h4 className="size">{product.sizeTitle}</h4>
                   <button
                     onClick={() => dispatch({ type: "ADD", payload: product })}
                     className="buttonAdd"
-                  >{`20g || $${product.precioPequeño}`}</button>
-                </section>
-                <section>
-                  <h4 className="size">{product.mediano}</h4>
-                  <button
-                    onClick={() => dispatch({ type: "ADD", payload: product })}
-                    className="buttonAdd"
-                  >{`40g || $${product.precioMediano}`}</button>
-                </section>
-                <section>
-                  <h4 className="size">{product.grande}</h4>
-                  <button
-                    onClick={() => dispatch({ type: "ADD", payload: product })}
-                    className="buttonAdd"
-                  >{`70g || $${product.precioGrande}`}</button>
+                  >{`${product.size} || $${product.price}`}</button>
                 </section>
               </div>
             </div>
