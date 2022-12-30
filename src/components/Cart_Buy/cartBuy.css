@@ -20,6 +20,10 @@
   position: relative;
 }
 
+.delete{
+  align-self: flex-start
+}
+
 .icon {
   font-size: 30px;
   cursor: pointer;
@@ -82,6 +86,13 @@
   font-size: 25px;
   cursor: pointer;
 }
+
+ button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+} 
+
 
 .quatity i:hover {
   color: var(--colorGlobal);

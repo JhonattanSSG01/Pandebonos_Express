@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import 'remixicon/fonts/remixicon.css';
 import Home from './components/Home/Home';
-import Categories from './components/Categories/Categories';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Faq from './components/Questions/Questions';
 import CardProducts from './components/Card_Products/cardProducts';
@@ -22,10 +21,6 @@ const router = createBrowserRouter([
   {
     path: '/home',
     element: <Home />
-  },
-  {
-    path: '/categories',
-    element: <Categories />
   },
   {
     path: '/productos',

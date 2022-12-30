@@ -9,8 +9,11 @@ import { FooterAll } from "../Footer/Footer";
 export const CartBuy = () => {
   //Reduce
   const cart = useSelector((state) => state);
-  console.log(cart);
   const dispatch = useDispatch();
+   const addition = (acc, currentvalue) => {
+     return acc + currentvalue.precioPequeño * currentvalue.quantity;
+   };
+  const total = cart.reduce(addition, 0);
   return (
     <>
       <Header />
@@ -35,90 +38,38 @@ export const CartBuy = () => {
                 <h3 className="nameCart">{product.title}</h3>
                 <p className="textCart">$ {product.precioPequeño}</p>
               </section>
-              <i className="ri-delete-bin-6-line icon"></i>
+              <button className="delete"
+                onClick={() => dispatch({ type: "REMOVE", payload: product })}
+              >
+                <i className="ri-delete-bin-6-line icon"></i>
+              </button>
               <section className="quatity">
-                <i className="ri-subtract-line"></i>
+                <button
+                  onClick={() => {
+                    if (product.quantity > 1) {
+                      dispatch({ type: "DECREASE", payload: product });
+                    } else {
+                      dispatch({ type: "REMOVE", payload: product });
+                    }
+                  }}
+                >
+                  <i className="ri-subtract-line"></i>
+                </button>
                 <p>{product.quantity}</p>
-                <i className="ri-add-line"></i>
+                <button
+                  onClick={() =>
+                    dispatch({ type: "INCREASE", payload: product })
+                  }
+                >
+                  <i className="ri-add-line"></i>
+                </button>
               </section>
             </div>
           );
         })}
       </div>
+      {total > 0 && <h2>total:{total}</h2>}
       <FooterAll />
     </>
   );
 };
-//   allProducts,
-//   setAllProducts,
-//   total,
-//   countProducts,
-//   setCountProducts,
-//   setTotal,
-// }) => {
-//   const [active, setActive] = useState(false);
-
-//   const onDeleteProduct = (product) => {
-//     const results = allProducts.filter((item) => item.id !== product.id);
-
-//     setTotal(total - product.precioPequeño * product.quantity);
-//     setCountProducts(countProducts - product.quantity);
-//     setAllProducts(results);
-//   };
-
-//   const onCleanCart = (_) => {
-//     setAllProducts([]);
-//     setTotal(0);
-//     setCountProducts(0);
-//   };
-
-//   return (
-//     <div className="container icon">
-//       <div className="container-cart-icon" onClick={() => setActive(!active)}>
-//         <i
-//           className="ri-shopping-cart-line"
-//         ></i>
-//         <div className="count-products">
-//           <span id="contador-productos">{countProducts}</span>
-//         </div>
-//       </div>
-
-//       <div className={`container-cart-products ${active ? "" : "hidden-cart"}`}>
-//         {allProducts.length ? (
-//           <>
-//             <div className="row-product">
-//               {allProducts.map((product) => (
-//                 <div className="cart-product" key={product.id}>
-//                   <div className="info-cart-product">
-//                     <span className="cantidad-producto-carrito">
-//                       {product.quantity}
-//                     </span>
-//                     <p className="titulo-producto-carrito">{product.title}</p>
-//                     <span className="precio-producto-carrito">
-//                       ${product.precioPequeño}
-//                     </span>
-//                   </div>
-//                   <i
-//                     className="ri-delete-bin-6-line"
-//                     onClick={() => onDeleteProduct(product)}
-//                     style={{ fontSize: "2rem" }}
-//                   ></i>
-//                 </div>
-//               ))}
-//             </div>
-
-//             <div className="cart-total">
-//               <h3>Total:</h3>
-//               <span className="total-pagar">${total}</span>
-//             </div>
-
-//             <button className="btn-clear-all" onClick={onCleanCart}>
-//               Vaciar Carrito
-//             </button>
-//           </>
-//         ) : (
-//           <p className="cart-empty">El carrito está vacío</p>
-//         )}
-//       </div>
-//     </div>
-//   );
