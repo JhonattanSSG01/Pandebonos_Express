@@ -9,7 +9,7 @@ details > .questions {
   justify-content: space-between;
   align-items: center;
   content: "";
-  font-size: clamp(20px, 5vw, 30px);
+  font-size: clamp(20px, 5vw, 25px);
   font-weight: 600;
   color: var(--colorText);
   cursor: pointer;
@@ -69,7 +69,7 @@ details[open] i {
 @media only screen and (min-width: 600px) {
   .listQuestions,
   .message {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 80px auto;
   }
 

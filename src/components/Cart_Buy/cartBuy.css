@@ -1,18 +1,24 @@
+.global {
+  max-width: 600px;
+  height: auto;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: var(--colorNav);
+}
+
 .containerCart {
   max-width: 1000px;
   margin: auto;
   padding: 20px 0;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   place-items: center;
-  background-color: var(--colorFooter);
 }
 
 .inCart {
-  width: 80%;
+  width: 90%;
   height: auto;
   padding: 10px;
-  margin: 20px;
   background-color: var(--colorText);
   display: flex;
   justify-content: space-between;
@@ -25,7 +31,7 @@
 }
 
 .icon {
-  font-size: 30px;
+  font-size: clamp(20px, 5vw, 30px);
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -37,20 +43,20 @@
 }
 
 .textContainer {
-  width: 200px;
-  height: 150px;
+  width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .imageCart {
-  width: 120px;
+  width: 30%;
 }
 
 .textCart {
   margin: 0;
-  font-size: 30px;
+  font-size: clamp(15px, 5vw, 25px);
   color: var(--colorGlobal);
 }
 
@@ -63,27 +69,27 @@
 }
 
 .nameCart {
-  font-size: clamp(24px, 5vw, 25px);
+  font-size: clamp(20px, 5vw, 30px);
   text-align: left;
   margin: 0;
 }
 
 .quatity {
-  width: 80px;
-  height: 50px;
+  width: 20%;
+  height: 30px;
   margin-left: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-  background-color: var(--colorNav);
+  background-color: var(--colorFooter);
   position: absolute;
   bottom: 10px;
   right: 10px;
 }
 
 .quatity i {
-  font-size: 25px;
+  font-size: clamp(15px, 5vw, 30px);
   cursor: pointer;
 }
 
@@ -98,4 +104,46 @@
   color: var(--colorGlobal);
   transform: scale(0.8);
   transition: all 0.3s;
+}
+
+.amount {
+  text-align: right;
+  color: var(--colorGlobal);
+}
+
+.amount > h2{
+  padding: 0 10px;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between  ;
+}
+
+.wp{
+  width: calc(100% - 30px);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  color: var(--colorGlobal);
+  font-size: clamp(22px, 5vw, 28px);
+  font-family: var(--fontPrincipal);
+  background-color: var(--colorFooter);
+  box-shadow: 0 8px 4px rgba(0, 0, 0, .5);
+}
+
+@media only screen and (min-width: 600px){
+  .global {
+  margin: auto;
+}
+
+.wp{
+  cursor: pointer;
+  transition: all .5s;
+}
+.wp:hover{
+  background-color: var(--colorText);
+  transform: scale(.95);
+  transition: all .5s;
+  font-size: 32px;
+  color: var(--colorFooter);
+}
 }

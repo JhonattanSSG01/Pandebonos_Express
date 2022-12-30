@@ -3,6 +3,7 @@ import "./CardProducts.css";
 import { DataProducts } from "../../Data/data";
 import Header from "../Header/Header";
 import { FooterAll } from "../Footer/Footer";
+import CategorieAll from "./assets/all.jpg";
 import Categorie1 from "./assets/categoria1.jpg";
 import Categorie2 from "./assets/categoria2.jpg";
 import Categorie3 from "./assets/categoria3.jpg";
@@ -33,7 +34,7 @@ const CardProducts = () => {
           textAlign: "center",
           color: "var(--colorText)",
           fontSize: "2rem",
-          lineHeight: "32px"
+          lineHeight: "32px",
         }}
       >
         Nuestros Productos
@@ -45,7 +46,7 @@ const CardProducts = () => {
           }}
         >
           <div className="card">
-            <img src={Categorie1} alt="Imagen de la tarjeta" />
+            <img src={CategorieAll} alt="Imagen de la tarjeta" />
             <h2 className="text">Todos</h2>
           </div>
         </button>

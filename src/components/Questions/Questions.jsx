@@ -23,13 +23,14 @@ const Faq = _ => {
             <details open>
               <summary className="questions">
                 {" "}
-                Pregunta? <i className="ri-arrow-right-s-line"></i>
+                ¿Cuál es la mejor manera de almacenar los amasijos en casa para
+                mantenerlos frescos? <i className="ri-arrow-right-s-line"></i>
               </summary>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                assumenda pariatur molestias odit aliquam, dolorum ducimus quasi
-                quos asperiores quod veritatis consectetur qui alias fugiat
-                saepe nulla quo similique provident.
+                Los amasijos se mantendrán frescos durante más tiempo si se
+                almacenan en un lugar fresco y seco, como en una despensa o en
+                un armario. También pueden envolverse en papel de aluminio o en
+                una bolsa de plástico para ayudar a retener la humedad.
               </p>
             </details>
           </article>
@@ -37,13 +38,14 @@ const Faq = _ => {
             <details>
               <summary className="questions">
                 {" "}
-                Pregunta? <i className="ri-arrow-right-s-line"></i>
+                ¿Cuál es el proceso de producción de sus amasijos?{" "}
+                <i className="ri-arrow-right-s-line"></i>
               </summary>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                assumenda pariatur molestias odit aliquam, dolorum ducimus quasi
-                quos asperiores quod veritatis consectetur qui alias fugiat
-                saepe nulla quo similique provident.
+                Es útil proporcionar información sobre el proceso de producción
+                de los amasijos, como si son hechos a mano o utilizan máquinas,
+                si utilizan ingredientes orgánicos o no, si utilizan productos
+                lácteos, etc.
               </p>
             </details>
           </article>
@@ -51,13 +53,15 @@ const Faq = _ => {
             <details>
               <summary className="questions">
                 {" "}
-                Pregunta? <i className="ri-arrow-right-s-line"></i>
+                ¿Puedo hacer un pedido por adelantado y recogerlo más tarde en
+                el día? <i className="ri-arrow-right-s-line"></i>
               </summary>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                assumenda pariatur molestias odit aliquam, dolorum ducimus quasi
-                quos asperiores quod veritatis consectetur qui alias fugiat
-                saepe nulla quo similique provident.
+                La mayoría de las tiendas de amasijos aceptan pedidos por
+                adelantado y ofrecen la opción de recoger el pedido más tarde en
+                el día. Es importante confirmar con la tienda si esta opción
+                está disponible y si hay cualquier política de cancelación o
+                cambio de pedido.
               </p>
             </details>
           </article>
