@@ -7,13 +7,15 @@ import Home from './components/Home/Home';
 import Categories from './components/Categories/Categories';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Faq from './components/Questions/Questions';
+import CardProducts from './components/Card_Products/cardProducts';
 
 //import redux
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 //Import reducer component
 import Reducer from './components/Reducer';
-import { CardProducts } from './components/Card_Products/cardProducts';
+import { CartBuy } from './components/Cart_Buy/CartBuy';
+
 const Store = createStore(Reducer);
 
 const router = createBrowserRouter([
@@ -25,13 +27,17 @@ const router = createBrowserRouter([
     path: '/categories',
     element: <Categories />
   },
-  // {
-  //   path: '/productos',
-  //   element: <CardProducts />
-  // },
+  {
+    path: '/productos',
+    element: <CardProducts />
+  },
   {
     path: '/questions',
     element: <Faq />
+  },
+  {
+    path: '/carrito',
+    element: <CartBuy />
   },
   {
     path: '/',

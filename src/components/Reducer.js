@@ -1,9 +1,8 @@
 const Reducer = (cart = [], action) => {
   if (action.type === 'ADD') {
-    const newItem = action.payload
-    const tempcraft = cart.filter((product) => product.id === newItem.id)
+    const tempcraft = cart.filter((data) => data.id === action.payload.id)
     if (tempcraft < 1) {
-      return [...cart, newItem]
+      return [...cart, action.payload]
     } else {
       return cart;
     }

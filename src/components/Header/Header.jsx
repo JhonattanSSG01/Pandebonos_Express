@@ -46,15 +46,11 @@ const Header = _ => {
                 FAQ
               </Link>
             </li>
-            <CartBuy
-              allProducts={allProducts}
-              setAllProducts={setAllProducts}
-              total={total}
-              setTotal={setTotal}
-              countProducts={countProducts}
-              setCountProducts={setCountProducts}
-            />
-           
+            <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
+              <Link to="/carrito" className="href">
+                Carrito
+              </Link>
+            </li> 
           </ul>
         </nav>
       </header>
