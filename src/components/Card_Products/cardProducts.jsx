@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import "./CardProducts.css";
-import "../Categories/categories.css";
 import { DataProducts } from "../../Data/data";
 import Header from "../Header/Header";
 import { FooterAll } from "../Footer/Footer";
@@ -30,10 +29,11 @@ const CardProducts = () => {
       <Header />
       <h2
         style={{
-          margin: "4rem 0 2rem 0",
+          margin: "3rem 0 1rem 0",
           textAlign: "center",
           color: "var(--colorText)",
           fontSize: "2rem",
+          lineHeight: "32px"
         }}
       >
         Nuestros Productos
@@ -41,12 +41,24 @@ const CardProducts = () => {
       <div className="filters">
         <button
           onClick={() => {
+            filterSection(setData(data));
+          }}
+        >
+          <div className="card">
+            <img src={Categorie1} alt="Imagen de la tarjeta" />
+            <h2 className="text">Todos</h2>
+          </div>
+        </button>
+        <button
+          onClick={() => {
             filterSection("Productos Elaborados");
           }}
         >
           <div className="card">
             <img src={Categorie1} alt="Imagen de la tarjeta" />
-            <h2>hola</h2>
+            <h2 className="textC">
+              Productos <span>Elaborados</span>
+            </h2>
           </div>
         </button>
         <button
@@ -56,7 +68,9 @@ const CardProducts = () => {
         >
           <div className="card">
             <img src={Categorie2} alt="Imagen de la tarjeta" />
-            <h2>hola</h2>
+            <h2 className="textC">
+              Insumos <span>Para La Elaboración</span>
+            </h2>
           </div>
         </button>
         <button
@@ -66,7 +80,9 @@ const CardProducts = () => {
         >
           <div className="card">
             <img src={Categorie3} alt="Imagen de la tarjeta" />
-            <h2>hola</h2>
+            <h2 className="textC">
+              Combos <span>Temporadas Especiales</span>
+            </h2>
           </div>
         </button>
       </div>
@@ -79,10 +95,7 @@ const CardProducts = () => {
             <div className="containerProducts" key={product.id}>
               <div className="image">
                 <section>
-                  <img
-                    src={product.productsUrl}
-                    alt="Imagen del producto"
-                  />
+                  <img src={product.productsUrl} alt="Imagen del producto" />
                 </section>
                 <p className="text">{product.text}</p>
               </div>
@@ -91,27 +104,21 @@ const CardProducts = () => {
                 <section>
                   <h4 className="size">{product.pequeño}</h4>
                   <button
-                    onClick={() =>
-                      dispatch({ type: "ADD", payload: product })
-                    }
+                    onClick={() => dispatch({ type: "ADD", payload: product })}
                     className="buttonAdd"
                   >{`20g || $${product.precioPequeño}`}</button>
                 </section>
                 <section>
                   <h4 className="size">{product.mediano}</h4>
                   <button
-                    onClick={() =>
-                      dispatch({ type: "ADD", payload: product })
-                    }
+                    onClick={() => dispatch({ type: "ADD", payload: product })}
                     className="buttonAdd"
                   >{`40g || $${product.precioMediano}`}</button>
                 </section>
                 <section>
                   <h4 className="size">{product.grande}</h4>
                   <button
-                    onClick={() =>
-                      dispatch({ type: "ADD", payload: product })
-                    }
+                    onClick={() => dispatch({ type: "ADD", payload: product })}
                     className="buttonAdd"
                   >{`70g || $${product.precioGrande}`}</button>
                 </section>

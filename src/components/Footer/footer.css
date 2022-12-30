@@ -45,10 +45,6 @@ footer > .containerFooter {
   align-items: center;
 }
 
-.icons{
-  padding: 20px 0;
-}
-
 .copy > .icons > a {
   text-decoration: none;
   color: var(--colorGlobalFooter);

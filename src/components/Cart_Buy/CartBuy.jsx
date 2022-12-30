@@ -5,6 +5,7 @@ import "./cartBuy.css";
 import { useSelector, useDispatch } from "react-redux";
 import Header from "../Header/Header";
 import { FooterAll } from "../Footer/Footer";
+import ReactWhatsapp from "react-whatsapp";
 
 export const CartBuy = () => {
   //Reduce
@@ -64,11 +65,14 @@ export const CartBuy = () => {
                   <i className="ri-add-line"></i>
                 </button>
               </section>
+              {total > 0 && <h2>total:{total}</h2>}
             </div>
           );
         })}
       </div>
-      {total > 0 && <h2>total:{total}</h2>}
+        <ReactWhatsapp number="57-319-678-8028" message={`Hello World!!! ${cart.map((item) => 
+          item.quantity + " " + item.title 
+  )} para $${total}`} > Whatsapp </ReactWhatsapp>
       <FooterAll />
     </>
   );

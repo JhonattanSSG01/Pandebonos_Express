@@ -3,8 +3,7 @@ import "./header.css";
 import Logo from "./assets/logo.jpeg";
 import { Link } from "react-router-dom";
 
-const Header = _ => {
-
+const Header = (_) => {
   const [menu, setMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -42,13 +41,18 @@ const Header = _ => {
                 FAQ
               </Link>
             </li>
-            <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
+            <li className={`items floatDt ${menu ? "isActive" : "isNotActive"}`}>
               <Link to="/carrito" className="href">
                 <i className="ri-shopping-cart-fill icon"></i>
               </Link>
             </li>
           </ul>
         </nav>
+        <div className="floatMb">
+          <Link to="/carrito" className="href">
+            <i className="ri-shopping-cart-fill icon"></i>
+          </Link>
+        </div>
       </header>
     </>
   );
