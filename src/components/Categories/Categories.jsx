@@ -1,11 +1,11 @@
-import React from "react";
+import { useState, useEffect, React} from "react";
 import { Link } from "react-router-dom";
 import "./categories.css";
-import DataCategories from "../../DataCategories.json";
+import { DataProducts } from "../../Data/data";
 import Header from "../Header/Header";
 import { FooterAll } from "../Footer/Footer";
 
-const Categories = props => {
+const Categories = _ => {
   return (
     <>
       <Header />
@@ -19,18 +19,23 @@ const Categories = props => {
       >
         Productos
       </h2>
-      {DataCategories.map((info) => {
-        return (
-          <Link to="/productos">
-            <div className="card" key={info.id}>
-              <img src={info.url} alt="Imagen de la tarjeta" />
-              <h2>{info.title}</h2>
-            </div>
-          </Link>
-        );
-      })}
+
+        {DataProducts.map((item) => {
+          if (item.id === 1001 || item.id === 2001 || item.id === 3001) {
+            return (
+              <Link
+                to="/productos"
+              >
+                <div className="card">
+                  <img src={item.categoryUrl} alt="Imagen de la tarjeta" />
+                  <h2>{item.category}</h2>
+                </div>
+              </Link>
+            );
+          };
+        })
+        };
       <FooterAll />
-      
     </>
   );
 };

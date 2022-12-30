@@ -32,17 +32,17 @@ const Header = _ => {
         <nav className={`nav ${menu ? "isActive" : ""}`}>
           <ul className="containerItems">
             <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
-              <Link onClick={toggleMenu} to="/home" className="href">
+              <Link to="/home" className="href">
                 Inicio
               </Link>
             </li>
             <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
-              <Link onClick={toggleMenu} to="/categories" className="href">
+              <Link to="/categories" className="href">
                 Productos
               </Link>
             </li>
             <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
-              <Link onClick={toggleMenu} to="/questions" className="href">
+              <Link to="/questions" className="href">
                 FAQ
               </Link>
             </li>
@@ -54,6 +54,7 @@ const Header = _ => {
               countProducts={countProducts}
               setCountProducts={setCountProducts}
             />
+           
           </ul>
         </nav>
       </header>
