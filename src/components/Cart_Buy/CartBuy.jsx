@@ -12,7 +12,7 @@ export const CartBuy = () => {
   const cart = useSelector((state) => state);
   const dispatch = useDispatch();
   const addition = (acc, currentvalue) => {
-    return acc + currentvalue.precioPequeño * currentvalue.quantity;
+    return acc + currentvalue.price * currentvalue.quantity;
   };
   const total = cart.reduce(addition, 0);
   return (
@@ -39,7 +39,7 @@ export const CartBuy = () => {
                 </section>
                 <section className="textContainer">
                   <h3 className="nameCart">{product.title}</h3>
-                  <p className="textCart">Precio ${product.precioPequeño}</p>
+                  <p className="textCart">Precio ${product.price}</p>
                 </section>
                 <button
                   className="delete"

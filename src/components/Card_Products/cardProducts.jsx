@@ -42,7 +42,7 @@ const CardProducts = () => {
       <div className="filters">
         <button
           onClick={() => {
-            filterSection(setData(data));
+            setData(DataProducts);
           }}
         >
           <div className="card">
@@ -107,7 +107,7 @@ const CardProducts = () => {
                   <button
                     onClick={() => dispatch({ type: "ADD", payload: product })}
                     className="buttonAdd"
-                  >{`${product.size} || $${product.price}`}</button>
+                  >{product.category === "Productos Elaborados" ? `${product.size} || $${product.price}` : `$${product.price}`}</button>
                 </section>
               </div>
             </div>
