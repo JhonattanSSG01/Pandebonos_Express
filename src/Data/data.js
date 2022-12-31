@@ -448,7 +448,6 @@ export const DataProducts = [
     productsUrl: "https://drive.google.com/uc?export=view&id=1Wd7S61poxeYplfIhmoq0QIR5OU_vA-4i",
     category: "Insumos Para La Elaboración",
     title: "Queso Costeño Molido O En Bloque",
-    text: "Ofrecemos la masa lista para la preparación y refrigeración de cada uno de nuestros productos.",
     sizeTitle: "1 Libra",
     price: 12000,
     quantity: 1
@@ -458,7 +457,6 @@ export const DataProducts = [
     productsUrl: "https://drive.google.com/uc?export=view&id=1Wd7S61poxeYplfIhmoq0QIR5OU_vA-4i",
     category: "Insumos Para La Elaboración",
     title: "Queso Costeño Molido O En Bloque",
-    text: "Ofrecemos la masa lista para la preparación y refrigeración de cada uno de nuestros productos.",
     sizeTitle: "2 Libras",
     price: 24000,
     quantity: 1
@@ -468,7 +466,6 @@ export const DataProducts = [
     productsUrl: "https://drive.google.com/uc?export=view&id=1Wd7S61poxeYplfIhmoq0QIR5OU_vA-4i",
     category: "Insumos Para La Elaboración",
     title: "Queso Costeño Molido O En Bloque",
-    text: "Ofrecemos la masa lista para la preparación y refrigeración de cada uno de nuestros productos.",
     sizeTitle: "3 Libras",
     price: 36000,
     quantity: 1
@@ -478,7 +475,6 @@ export const DataProducts = [
     productsUrl: "https://drive.google.com/uc?export=view&id=1ejilMEDca4OZgm_NIiw8YGax7kBN2zf-",
     category: "Insumos Para La Elaboración",
     title: "Queso Campesino En Bloque",
-    text: "Ofrecemos la masa lista para la preparación y refrigeración de cada uno de nuestros productos.",
     sizeTitle: "1 Libra",
     price: 8000,
     quantity: 1
@@ -488,7 +484,6 @@ export const DataProducts = [
     productsUrl: "https://drive.google.com/uc?export=view&id=1ejilMEDca4OZgm_NIiw8YGax7kBN2zf-",
     category: "Insumos Para La Elaboración",
     title: "Queso Campesino En Bloque",
-    text: "Ofrecemos la masa lista para la preparación y refrigeración de cada uno de nuestros productos.",
     sizeTitle: "2 Libras",
     price: 16000,
     quantity: 1
@@ -498,24 +493,28 @@ export const DataProducts = [
     productsUrl: "https://drive.google.com/uc?export=view&id=1ejilMEDca4OZgm_NIiw8YGax7kBN2zf-",
     category: "Insumos Para La Elaboración",
     title: "Queso Campesino En Bloque",
-    text: "Ofrecemos la masa lista para la preparación y refrigeración de cada uno de nuestros productos.",
     sizeTitle: "3 Libras",
     price: 24000,
     quantity: 1
   },
   {
-    id: 3001,
-    categoryUrl: "https://drive.google.com/uc?export=view&id=1foDHdkkBfEJ9bXKSFHp1OWnT3Fn77Dz2",
+    id: 1111,
     category: "Combos Temporadas Especiales",
-    productsUrl: "https://drive.google.com/uc?export=view&id=17Jprl87n6EQqxaomuCO14nL004RQm4dk",
-    title: "Garulla",
-    text: "Elaborado a partir de harina de trigo, supearepa, mantequilla, azúcar, huevos, saborizante y leudante.",
-    kiloUno: "1 Kilo",
-    kiloDos: "2 Kilos",
-    kiloTres: "3 Kilos",
-    precioKiloUno: 600,
-    precioKiloDos: 1000,
-    precioKiloTres: 2000,
+    productsUrl: "https://drive.google.com/uc?export=view&id=1aPG1H3KlfzbzByLWGgDFP8XCGl1idBba",
+    title: "Combo #1",
+    text: "Este combo tiene 10 mini buñuelos de 20g, 1 plato de natilla personal, 1 avena personal de 15 onzas y 1 masato personal de 15 onzas.",
+    sizeTitle: "10 Mini Buñuelos 1 Natilla Personal 1 Avena Personal 1 Masato Personal",
+    price: 18500,
+    quantity: 1
+  },
+  {
+    id: 1112,
+    category: "Combos Temporadas Especiales",
+    productsUrl: "https://drive.google.com/uc?export=view&id=1aPG1H3KlfzbzByLWGgDFP8XCGl1idBba",
+    title: "Combo #2",
+    text: "Este combo tiene 2 buñuelos medianos de 40g, 1 plato de natilla personal y 2 avenas personales de 15 onzas.",
+    sizeTitle: "2 Buñuelos X 40g 1 Natilla Personal 2 Avenas Personales",
+    price: 14000,
     quantity: 1
   }
 ]
