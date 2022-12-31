@@ -18,6 +18,7 @@
 .inCart {
   width: 90%;
   height: auto;
+  margin: 5px 0;
   padding: 10px;
   background-color: var(--colorText);
   display: flex;
@@ -26,8 +27,8 @@
   position: relative;
 }
 
-.delete{
-  align-self: flex-start
+.delete {
+  align-self: flex-start;
 }
 
 .icon {
@@ -93,12 +94,11 @@
   cursor: pointer;
 }
 
- button{
+button {
   border: none;
   outline: none;
   background-color: transparent;
-} 
-
+}
 
 .quatity i:hover {
   color: var(--colorGlobal);
@@ -111,14 +111,14 @@
   color: var(--colorGlobal);
 }
 
-.amount > h2{
+.amount > h2 {
   padding: 0 10px;
   font-weight: 100;
   display: flex;
-  justify-content: space-between  ;
+  justify-content: space-between;
 }
 
-.wp{
+.wp {
   width: calc(100% - 30px);
   margin: 15px;
   padding: 15px;
@@ -127,23 +127,27 @@
   font-size: clamp(22px, 5vw, 28px);
   font-family: var(--fontPrincipal);
   background-color: var(--colorFooter);
-  box-shadow: 0 8px 4px rgba(0, 0, 0, .5);
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (min-width: 600px){
+.wp.oculto{
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
   .global {
-  margin: auto;
-}
+    margin: auto;
+  }
 
-.wp{
-  cursor: pointer;
-  transition: all .5s;
-}
-.wp:hover{
-  background-color: var(--colorText);
-  transform: scale(.95);
-  transition: all .5s;
-  font-size: 32px;
-  color: var(--colorFooter);
-}
+  .wp {
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .wp:hover {
+    background-color: var(--colorText);
+    transform: scale(0.95);
+    transition: all 0.5s;
+    font-size: 32px;
+    color: var(--colorFooter);
+  }
 }

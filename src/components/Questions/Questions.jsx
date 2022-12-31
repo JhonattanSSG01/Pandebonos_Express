@@ -72,7 +72,9 @@ const Faq = _ => {
             más acerca de nuestro portafolio de productos.
           </p>
           <section className="containerButton">
-            <button className="buttonInfo">Solicitar Información</button>
+            <button className="buttonInfo">
+              <a href="https://api.whatsapp.com/send/?phone=573164724269&text&type=phone_number&app_absent=0" target="_blank"> Solicitar Información</a>
+            </button>
           </section>
         </section>
       </div>

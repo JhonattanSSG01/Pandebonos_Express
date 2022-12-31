@@ -48,19 +48,28 @@ details[open] i {
   text-align: center;
 }
 
+.buttonInfo > a{
+  text-decoration: none;
+  color: var(--colorNav);
+}
+
 .containerButton > .buttonInfo {
   padding: 20px;
   outline: none;
   border: none;
   font-size: clamp(18px, 5vw, 25px);
   border-radius: 15px;
-  color: var(--colorText);
   background-color: var(--colorFooter);
   cursor: pointer;
 }
 
-.containerButton > .buttonInfo:hover {
+.containerButton > .buttonInfo > a:hover {
   color: var(--colorFooter);
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.containerButton > .buttonInfo:hover {
   background-color: var(--colorText);
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
