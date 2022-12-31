@@ -72,7 +72,7 @@ export const CartBuy = () => {
             );
           })}
         </section>
-        <div className="amount">{total > 0 && <h2>Total a pagar: <span>${total}</span></h2>}</div>
+        <div className="amount">{total > 0 ? <h2>Total a pagar: <span>${total}</span></h2> : <h2>Total a pagar: <span>${0}</span></h2>}</div>
           <ReactWhatsapp className={`wp ${total === 0 ? 'oculto' : ''}`}
             number="+573164724269"
             message={`Bienvenidos a Pandebonos Express!!! Donde la felicidad huele a un amasijo recién hecho. La cantidad de productos a solicitar son: ${cart.map(
@@ -80,7 +80,7 @@ export const CartBuy = () => {
             )} y el total a pagar es de $${total}, esto no incluye el envío, solamente es gratis cuando pasa el limite de $30.000. Gracias por su apoyo.`}
           >
             Realizar Pedido
-          </ReactWhatsapp> :
+          </ReactWhatsapp>
       
       </div>
       <FooterAll />
