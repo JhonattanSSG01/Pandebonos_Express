@@ -26,3 +26,18 @@ code {
     monospace;
 }
 
+/* Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 8px;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--colorFooter);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--colorText);
+  border-radius: 10px;
+}
+

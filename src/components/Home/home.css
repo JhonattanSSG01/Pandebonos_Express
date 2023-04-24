@@ -17,7 +17,22 @@
   font-size: clamp(22px, 5vw, 30px);
   text-align: center;
   color: var(--colorText);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: writer 3s steps(50) normal both;
 }
+
+
+  @keyframes writer {
+    from {
+      width: 0;
+      margin: auto;
+    }
+    to {
+      width: 100%;
+      margin: auto;
+    }
+  }
 
 .legendWelcome .subtitle {
   margin: 8px;
@@ -72,14 +87,34 @@ main > .textPrincipal {
 }
 
 .button {
+  color: var(--colorBody);
+  background: conic-gradient(from 90deg at 3px 3px,#0000 90deg,var(--colorBody) 0)
+    10px 10px/calc(100% - 3px - 2*10px) calc(100% - 3px - 2*10px);
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: 3px solid #0000;
+  outline-offset: .6em;
+  border: 0;
   padding: 8px 32px;
   text-decoration: none;
   font-size: clamp(18px, 5vw, 25px);
   font-weight: 600;
   border-radius: 8px;
-  color: var(--colorGlobal);
   background-color: var(--colorText);
   box-shadow: inset 0 -5px 8px var(--colorNav);
+}
+
+.button:hover,
+.button:focus-visible {
+  --_p: 0px;
+  color: var(--colorText);
+  outline-color: var(--colorText);
+  outline-offset: .05em;
+  background-color: transparent;
+}
+
+.button:active {
+  background: var(--colorBody);
+  color: var(--colorGlobalFooter);
 }
 
 @media only screen and (min-width: 480px) {

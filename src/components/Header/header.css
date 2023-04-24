@@ -10,6 +10,10 @@ header {
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 header > .headerContainer {
@@ -88,8 +92,10 @@ header > .headerContainer {
   border-radius: 10px;
 }
 
-.items > .href,
-.floatMb > .href {
+.items > .href {
+  border: none;
+  background: none;
+  font-weight: 400;
   text-decoration: none;
   font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--colorGlobal);
@@ -161,8 +167,28 @@ header > .headerContainer {
     margin: 0 30px;
   }
 
+  .items:not(:last-of-type) > .href::before {
+    margin-left: auto;
+  }
+
+  .items:not(:last-of-type) > .href::after,
+  .items:not(:last-of-type) > .href::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--colorFooter);
+    display: block;
+    transition: 0.5s;
+  }
+
+  .items:not(:last-of-type) > .href:hover::after,
+  .items:not(:last-of-type) > .href:hover::before {
+    width: 100%;
+  }
+
   .items > .href:hover {
     color: var(--colorText);
+    transition: 0.4s ease-in-out;
   }
 
   .floatDt > .href {

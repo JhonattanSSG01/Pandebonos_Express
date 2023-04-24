@@ -27,7 +27,7 @@ const Header = (_) => {
         <nav className={`nav ${menu ? "isActive" : ""}`}>
           <ul className="containerItems">
             <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
-              <Link to="/home" className="href">
+              <Link to="/home" className="href active">
                 Inicio
               </Link>
             </li>
@@ -41,7 +41,9 @@ const Header = (_) => {
                 FAQ
               </Link>
             </li>
-            <li className={`items floatDt ${menu ? "isActive" : "isNotActive"}`}>
+            <li
+              className={`items floatDt ${menu ? "isActive" : "isNotActive"}`}
+            >
               <Link to="/carrito" className="href">
                 <i className="ri-shopping-cart-fill icon"></i>
               </Link>

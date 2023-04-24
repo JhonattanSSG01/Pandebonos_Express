@@ -81,4 +81,21 @@ footer > .containerFooter {
     flex-direction: row;
     justify-content: space-around;
   }
+
+  .copy > .icons > a > i:hover{
+    font-size: 60px;
+    transition: .5s all;
+  }
+  .copy > .icons > a:first-child:hover{
+    color: #4267B2;
+  }
+  .copy > .icons > a:nth-child(2):hover{
+    color: #D9164A;
+  }
+  .copy > .icons > a:nth-child(3):hover{
+    color: #46C756;
+  }
+  .copy > .icons > a:nth-child(4):hover{
+    color: #dc6232;
+  }
 }

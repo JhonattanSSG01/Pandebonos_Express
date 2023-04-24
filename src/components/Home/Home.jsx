@@ -13,18 +13,23 @@ const Home = _ => {
       <Header />
       <main>
         <div className="legendWelcome">
-          <img src={Welcome} alt="Imagen de Bienvenida" />
+          <img
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            src={Welcome}
+            alt="Imagen de Bienvenida"
+          />
           <section>
             <h1 className="title">Pandebono Express</h1>
-            <h3 className="subtitle">
+            <h3 className="subtitle animate__animated animate__flash">
               La felicidad huele Amasijo recién hecho
             </h3>
           </section>
         </div>
         <p className="textPrincipal">
           Desarrollar, elaborar y comercializar productos a base de queso y
-          bebidas típicas acompañantes que nos permiten cutivar a nuestros
-          clientes con productos frescos y calienticos.
+          bebidas típicas acompañantes que nos permiten cautivar a nuestros
+          clientes con productos frescos y calientes.
           <br />
           <br />
           Buscamos el desarrollo y el lograr de nuestros objetivos empresariales
@@ -34,11 +39,16 @@ const Home = _ => {
         <h1 className="title">Nuestros Productos</h1>
         <div className="products">
           <img
+            data-aos="fade-right"
+            data-aos-duration="2000"
             className="products1 productsImg"
             src={Products1}
             alt="Imagen alusiva a los productos elaborados"
           />
           <img
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="200"
             className="products2 productsImg"
             src={Products2}
             alt="Imagen alusiva a los productos elaborados"
