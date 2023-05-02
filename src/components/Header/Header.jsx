@@ -27,7 +27,7 @@ const Header = (_) => {
         <nav className={`nav ${menu ? "isActive" : ""}`}>
           <ul className="containerItems">
             <li className={`items ${menu ? "isActive" : "isNotActive"}`}>
-              <Link to="/home" className="href active">
+              <Link to="/home" className="href">
                 Inicio
               </Link>
             </li>

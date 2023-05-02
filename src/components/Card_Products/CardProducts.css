@@ -2,6 +2,14 @@
   display: flex;
 }
 
+.titlePrincipal {
+  margin: 5rem 0 3rem 0 !important;
+  text-align: center;
+  color: var(--colorText);
+  font-size: 2rem;
+  line-height: 32px;
+}
+
 /* Filtros */
 .filters {
   display: flex;
@@ -24,7 +32,6 @@
   cursor: pointer;
 }
 
-
 .card > img {
   width: 100%;
   height: 100px;
@@ -33,11 +40,14 @@
   object-fit: cover;
   opacity: 0.8;
   transition: all 0.5s;
+  filter: blur(8px);
+  transform: scale(0.9);
 }
 
 .card:hover img {
-  transform: scale(0.9);
+  transform: scale(1);
   transition: all 0.5s;
+  filter: blur(0);
 }
 
 .link {
@@ -56,8 +66,13 @@
   text-align: center;
   font-size: 22px;
   color: var(--colorGlobal);
+  letter-spacing: 2px;
   border: 3px solid var(--colorText);
   border-radius: 10px;
+}
+
+.card:hover h2 {
+  font-weight: 700;
 }
 
 .card h2 > span {
@@ -132,7 +147,16 @@ h3 {
 }
 
 .price .buttonAdd {
-  width: 180px;
+  width: 280px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--colorGlobal);
+  min-height: 50px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+  background-color: var(--colorBody);
   outline: none;
   border: none;
   border-radius: 5px;
@@ -141,7 +165,6 @@ h3 {
   font-family: var(--fontPrincipal);
   box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  background-color: var(--colorBody);
 }
 
 @media only screen and (min-width: 768px) {
@@ -157,11 +180,57 @@ h3 {
     width: 42%;
   }
 
-  .price .buttonAdd:hover {
-    box-shadow: inset 2px 3px 10px rgba(0, 0, 0, 0.5);
+  .price .buttonAdd::before {
+    content: "";
     background-color: var(--colorText);
-    color: var(--colorBody);
+    display: block;
+    width: 45px;
+    height: 1px;
+    margin-right: 20px;
   }
+
+  .price .buttonAdd::after {
+    content: "";
+    background-color: var(--colorNav);
+    display: block;
+    width: 0%;
+    height: 100%;
+    box-shadow: inset 2px 3px 10px rgba(0, 0, 0, 0.5);
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .price .buttonAdd:hover {
+    color: var(--colorBody);
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .price .buttonAdd:hover::after {
+    width: 100%;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .price .buttonAdd:hover::before {
+    background-color: var(--colorBody);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+
   .price > section {
     width: 80%;
     margin: auto;

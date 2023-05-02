@@ -28,15 +28,7 @@ const CardProducts = () => {
   return (
     <>
       <Header />
-      <h2
-        style={{
-          margin: "3rem 0 1rem 0",
-          textAlign: "center",
-          color: "var(--colorText)",
-          fontSize: "2rem",
-          lineHeight: "32px",
-        }}
-      >
+      <h2 className="titlePrincipal">
         Nuestros Productos
       </h2>
       <div className="filters">
@@ -70,7 +62,7 @@ const CardProducts = () => {
           <div className="card">
             <img src={Categorie2} alt="Imagen de la tarjeta" />
             <h2 className="textC">
-              Insumos <span>Para La Elaboración</span>
+              Insumos <span>Para Elaboración</span>
             </h2>
           </div>
         </button>
@@ -82,7 +74,7 @@ const CardProducts = () => {
           <div className="card">
             <img src={Categorie3} alt="Imagen de la tarjeta" />
             <h2 className="textC">
-              Combos <span>Temporadas Especiales</span>
+              Combos <span> Especiales</span>
             </h2>
           </div>
         </button>
@@ -106,8 +98,11 @@ const CardProducts = () => {
                   <h4 className="size">{product.sizeTitle}</h4>
                   <button
                     onClick={() => dispatch({ type: "ADD", payload: product })}
-                    className="buttonAdd"
-                  >{product.category === "Productos Elaborados" ? `${product.size} || $${product.price}` : `$${product.price}`}</button>
+                    className="buttonAdd">
+                    {product.category === "Productos Elaborados"
+                      ? `${product.size} || $${product.price}`
+                      : `$${product.price}`}
+                  </button>
                 </section>
               </div>
             </div>
