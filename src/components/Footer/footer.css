@@ -82,20 +82,85 @@ footer > .containerFooter {
     justify-content: space-around;
   }
 
-  .copy > .icons > a > i:hover{
-    font-size: 60px;
-    transition: .5s all;
+  .icons a {
+    cursor: default;
   }
-  .copy > .icons > a:first-child:hover{
-    color: #4267B2;
+  .icons i {
+    cursor: pointer;
   }
-  .copy > .icons > a:nth-child(2):hover{
-    color: #D9164A;
+
+  .copy > .icons > a > .facebook:hover,
+  a:hover .facebook{
+    color: #4267b2;
   }
-  .copy > .icons > a:nth-child(3):hover{
-    color: #46C756;
+  .copy > .icons > a > .instagram:hover,
+  a:hover .instagram {
+    color: #d9164a;
   }
-  .copy > .icons > a:nth-child(4):hover{
+  .copy > .icons > a > .whatsapp:hover,
+  a:hover .whatsapp {
+    color: #46c756;
+  }
+  .copy > .icons > a > .maps:hover,
+  a:hover .maps {
     color: #dc6232;
+  }
+
+  .icons {
+    position: relative;
+  }
+
+  .icons .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: var(--colorGlobal);
+    padding: 5px 8px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .icons a:last-child .tooltip{
+    width: 20%;
+  }
+
+  .icons .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: var(--colorGlobal);
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .icons a:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  a:first-child:hover .tooltip,
+  a:first-child:hover .tooltip::before {
+    background: #1877f2;
+  }
+  a:nth-child(2):hover .tooltip,
+  a:nth-child(2):hover .tooltip::before {
+    background: #d9164a;
+  }
+  a:nth-child(3):hover .tooltip,
+  a:nth-child(3):hover .tooltip::before {
+    background: #46c756;
+  }
+  a:last-child:hover .tooltip,
+  a:last-child:hover .tooltip::before {
+    background: #dc6232;
   }
 }

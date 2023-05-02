@@ -19,22 +19,26 @@ export const FooterAll = _ => {
               href="https://es-la.facebook.com/pandebonoexpress/"
               target="_blank"
             >
-              <i className="ri-facebook-circle-fill"></i>
+              <span class="tooltip">Facebook</span>
+              <i className="ri-facebook-circle-fill facebook"></i>
             </a>
             <a
               href="https://instagram.com/pandebonoexpress?igshid=YmMyMTA2M2Y="
               target="_blank"
             >
-              <i className="ri-instagram-line"></i>
+              <span class="tooltip">Instagram</span>
+              <i className="ri-instagram-line instagram"></i>
             </a>
             <a
               href="https://api.whatsapp.com/send/?phone=573164724269&text&type=phone_number&app_absent=0"
               target="_blank"
             >
-              <i className="ri-whatsapp-line"></i>
+              <span class="tooltip">Whatsapp</span>
+              <i className="ri-whatsapp-line whatsapp"></i>
             </a>
             <a href="https://goo.gl/maps/v64FSh71mJDjKA8V9" target="_blank">
-              <i className="ri-navigation-fill"></i>
+              <span class="tooltip">Maps</span>
+              <i className="ri-navigation-fill maps"></i>
             </a>
           </section>
           <section className="credits">
