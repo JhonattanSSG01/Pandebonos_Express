@@ -8,7 +8,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Faq from './components/Questions/Questions';
 import CardProducts from './components/Card_Products/cardProducts';
 
-
 import 'animate.css';
 
 //import redux

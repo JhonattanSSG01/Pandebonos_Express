@@ -1,18 +1,55 @@
+body {
+  min-height: 100vh;
+}
+
+
 .global {
   max-width: 600px;
   height: auto;
-  margin: 10px;
   border-radius: 15px;
   background-color: var(--colorNav);
 }
 
+.global + .socialMedia{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 50px;
+}
+
 .containerCart {
   max-width: 1000px;
+  height: 300px;
   margin: auto;
   padding: 20px 0;
   display: grid;
   grid-template-columns: 100%;
   place-items: center;
+  overflow-y: scroll;
+}
+
+.iconCart {
+  background-image: url('https://www.100natural.com/delivery100/web/vistas/img/cartempty.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: .5;
+}
+
+/* Chrome, Edge, and Safari */
+.containerCart::-webkit-scrollbar {
+  width: 8px;
+  overflow-x: hidden;
+}
+
+.containerCart::-webkit-scrollbar-track {
+  background: var(--colorFooter);
+}
+
+.containerCart::-webkit-scrollbar-thumb {
+  background-color: var(--colorText);
+  border-radius: 10px;
 }
 
 .inCart {

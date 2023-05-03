@@ -8,8 +8,10 @@ import Categorie1 from "./assets/categoria1.jpg";
 import Categorie2 from "./assets/categoria2.jpg";
 import Categorie3 from "./assets/categoria3.jpg";
 
+// ES6 Modules or TypeScript
+import Swal from "sweetalert2";
 //import useSelector and useDispatch from redux
-import { useSelector, useDispatch }from 'react-redux';
+import { useSelector, useDispatch } from "react-redux";
 
 const CardProducts = () => {
   //Reduce
@@ -28,9 +30,7 @@ const CardProducts = () => {
   return (
     <>
       <Header />
-      <h2 className="titlePrincipal">
-        Nuestros Productos
-      </h2>
+      <h2 className="titlePrincipal">Nuestros Productos</h2>
       <div className="filters">
         <button
           onClick={() => {
@@ -97,10 +97,27 @@ const CardProducts = () => {
                 <section>
                   <h4 className="size">{product.sizeTitle}</h4>
                   <button
-                    onClick={() => dispatch({ type: "ADD", payload: product })}
-                    className="buttonAdd">
+                    onClick={() => {
+                      dispatch({ type: "ADD", payload: product });
+                      Swal.fire({
+                        position: "center",
+                        icon: "success",
+                        title: `${product.title} agregado`,
+                        text: "Has añadido correctamente el producto al carrito",
+                        showClass: {
+                          popup: "animate__animated animate__fadeInDown",
+                        },
+                        hideClass: {
+                          popup: "animate__animated animate__fadeOutUp",
+                        },
+                        showConfirmButton: false,
+                        timer: 1000,
+                      });
+                    }}
+                    className="buttonAdd"
+                  >
                     {product.category === "Productos Elaborados"
-                      ? `${product.size} || $${product.price}`
+                      ? `${product.size} || $${product.price} `
                       : `$${product.price}`}
                   </button>
                 </section>
