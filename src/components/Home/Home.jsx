@@ -55,7 +55,7 @@ const Home = _ => {
           />
         </div>
         <div className="buttonProducts">
-          <Link to="/categories" className="button">
+          <Link to="/productos" className="button">
             Productos
           </Link>
         </div>
